@@ -39,6 +39,6 @@ search( :users, "shell:*zsh" ).each do |u|
     owner user_id
     group user_id
     variables( :theme => ( theme || node[:ohmyzsh][:theme] ))
-    action :create_if_missing
+    action :create
   end
 end
